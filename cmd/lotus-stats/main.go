@@ -211,6 +211,9 @@ var runCmd = &cli.Command{
 			}
 
 			ts, err := api.ChainHead(ctx)
+
+			log.Info(ts)
+
 			if err != nil {
 				return err
 			}
